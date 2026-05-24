@@ -20,7 +20,7 @@ interface PasswordProps {
 
 const BreakerController: React.FC<PasswordProps> = ({ gameId, sessionId, initialLevel, userData, navigate, mode, onFinish }) => {
     // State Management
-    const [timeLeft, setTimeLeft] = useState(180);
+    const [timeLeft, setTimeLeft] = useState(200);
     const [lives, setLives] = useState(3);
     const [breakerData, setBreakerData] = useState<any>(null);
     const [challengeId, setChallengeId] = useState<string | null>(null);

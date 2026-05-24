@@ -28,7 +28,7 @@ const MakerController: React.FC<PasswordProps> = ({ gameId, sessionId, initialLe
     const [isAiAnalyzing, setIsAiAnalyzing] = useState(false);
     const [displayedText, setDisplayedText] = useState("");
     const [gameStatus, setGameStatus] = useState<'Win' | 'Loss' | null>(null);
-    const [timeLeft, setTimeLeft] = useState(60);
+    const [timeLeft, setTimeLeft] = useState(200);
     const [lives, setLives] = useState(3);
     const [loading, setLoading] = useState(false);
 
