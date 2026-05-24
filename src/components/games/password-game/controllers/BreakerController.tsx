@@ -47,6 +47,8 @@ const BreakerController: React.FC<PasswordProps> = ({ gameId, sessionId, initial
     // 1. التايمر (Timer)
     useEffect(() => {
         let timer: any;
+
+        
         if (timeLeft > 0 && lives > 0 && !isWaitingForMaker) {
             timer = setInterval(() => {
                 setTimeLeft(prev => prev - 1);
@@ -54,16 +56,16 @@ const BreakerController: React.FC<PasswordProps> = ({ gameId, sessionId, initial
         }
 
         if (timeLeft === 0) {
-            // if (mode === 'multiplayer') {
-            //     socket.emit('game_over', { sessionId, winner: 'maker' });
-            // }
+            if (mode === 'multiplayer') {
+                socket.emit('game_over', { sessionId, winner: 'maker' });
+            }
             handleFinishGame('Loss');
         }
 
         if (lives === 0) {
-            // if (mode === 'multiplayer') {
-            //     socket.emit('game_over', { sessionId, winner: 'maker' });
-            // }
+            if (mode === 'multiplayer') {
+                socket.emit('game_over', { sessionId, winner: 'maker' });
+            }
 
             handleFinishGame('Loss');
         }
