@@ -31,24 +31,24 @@ The platform transforms complex security protocols, threat detection, and vulner
 
 ## ✨ Key Features
 
-- 🎮 **Multiplayer & Single-Player Modes:** Real-time synchronized escape room challenges powered by WebSockets (2–4 players).
-- 🤖 **AI-Driven Dynamic Scenarios:** Integrated with Gemini AI APIs to generate adaptive, non-repetitive challenges.
-- 💬 **Tactical Communication:** Real-time in-game chat system with unread notification counters.
-- 📱 **Responsive Cyber UI:** Built with a modern dark-mode aesthetic, optimized across desktop, tablet, and mobile views.
-- 🏆 **Interactive Dashboards:** Live leaderboards, friends management, and weekly wager challenges.
+-  **Multiplayer & Single-Player Modes:** Real-time synchronized escape room challenges powered by WebSockets (2–4 players).
+-  **AI-Driven Dynamic Scenarios:** Integrated with Gemini AI APIs to generate adaptive, non-repetitive challenges.
+-  **Tactical Communication:** Real-time in-game chat system with unread notification counters.
+-  **Responsive Cyber UI:** Built with a modern dark-mode aesthetic, optimized across desktop, tablet, and mobile views.
+-  **Interactive Dashboards:** Live leaderboards, friends management, and weekly wager challenges.
 
 ---
 
 ## 🛠️ Tech Stack & Architecture
 
-### 🎨 Frontend Architecture
+###  Frontend Architecture
 - **Framework:** React.js (Bootstrapped with Vite)
 - **Styling & UI:** Tailwind CSS, PostCSS
 - **Real-Time Communication Client:** Socket.io-client
 - **Icons & Modals:** Lucide React, SweetAlert2
 - **Hosting & Deployment:** Vercel
 
-### ⚙️ Backend & AI Infrastructure (Private Repo)
+###  Backend & AI Infrastructure (Private Repo)
 - **Core Environment:** Node.js & Express.js for scalable API architecture and data management.
 - **Real-Time Engine:** Socket.IO for low-latency, multi-player event synchronization (2–4 players) and live state management.
 - **Generative AI Integration:** Gemini AI APIs for dynamic scenario creation, real-time security hint generation, and performance-based puzzle adaptation.
